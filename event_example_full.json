@@ -1,0 +1,261 @@
+{
+  "event_id": "1f3920280644418f98802c1716e21de9",
+  "level": "fatal",
+  "platform": "native",
+  "timestamp": 1668699555.4967232,
+  "server_name": "viter",
+  "contexts": {
+    "device": {
+      "type": "device",
+      "arch": "x86_64"
+    },
+    "os": {
+      "type": "os",
+      "name": "Linux",
+      "version": "6.0.8-arch1-1",
+      "kernel_version": "#1 SMP PREEMPT_DYNAMIC Thu, 10 Nov 2022 21:14:24 +0000"
+    },
+    "rust": {
+      "type": "runtime",
+      "name": "rustc",
+      "version": "1.63.0",
+      "channel": "stable"
+    }
+  },
+  "exception": {
+    "values": [
+      {
+        "type": "panic",
+        "value": "Panic from r-core-dump",
+        "stacktrace": {
+          "frames": [
+            {
+              "function": "<unknown>",
+              "instruction_addr": "0x0"
+            },
+            {
+              "function": "_start",
+              "filename": "start.S",
+              "abs_path": "/build/glibc/src/glibc/csu/../sysdeps/x86_64/start.S",
+              "lineno": 115,
+              "instruction_addr": "0x561132f55265"
+            },
+            {
+              "function": "__libc_start_main",
+              "instruction_addr": "0x7f8b00d3634a"
+            },
+            {
+              "function": "<unknown>",
+              "instruction_addr": "0x7f8b00d36290"
+            },
+            {
+              "function": "main",
+              "instruction_addr": "0x561132f60ab8"
+            },
+            {
+              "function": "std::rt::lang_start_internal",
+              "filename": "rt.rs",
+              "abs_path": "/rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/rt.rs",
+              "lineno": 128,
+              "instruction_addr": "0x56113307e68e"
+            },
+            {
+              "function": "std::panic::catch_unwind",
+              "filename": "panic.rs",
+              "abs_path": "/rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/panic.rs",
+              "lineno": 137,
+              "instruction_addr": "0x56113307e68e"
+            },
+            {
+              "function": "std::panicking::try",
+              "filename": "panicking.rs",
+              "abs_path": "/rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/panicking.rs",
+              "lineno": 456,
+              "instruction_addr": "0x56113307e68e"
+            },
+            {
+              "function": "std::panicking::try::do_call",
+              "filename": "panicking.rs",
+              "abs_path": "/rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/panicking.rs",
+              "lineno": 492,
+              "instruction_addr": "0x56113307e68e"
+            },
+            {
+              "function": "std::rt::lang_start_internal::{{closure}}",
+              "filename": "rt.rs",
+              "abs_path": "/rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/rt.rs",
+              "lineno": 128,
+              "instruction_addr": "0x56113307e68e"
+            },
+            {
+              "function": "std::panic::catch_unwind",
+              "filename": "panic.rs",
+              "abs_path": "/rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/panic.rs",
+              "lineno": 137,
+              "instruction_addr": "0x56113307e68e"
+            },
+            {
+              "function": "std::panicking::try",
+              "filename": "panicking.rs",
+              "abs_path": "/rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/panicking.rs",
+              "lineno": 456,
+              "instruction_addr": "0x56113307e68e"
+            },
+            {
+              "function": "std::panicking::try::do_call",
+              "filename": "panicking.rs",
+              "abs_path": "/rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/panicking.rs",
+              "lineno": 492,
+              "instruction_addr": "0x56113307e68e"
+            },
+            {
+              "function": "core::ops::function::impls::<impl core::ops::function::FnOnce<A> for &F>::call_once",
+              "filename": "function.rs",
+              "abs_path": "/rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/core/src/ops/function.rs",
+              "lineno": 280,
+              "instruction_addr": "0x56113307e68e"
+            },
+            {
+              "function": "std::rt::lang_start::{{closure}}",
+              "filename": "rt.rs",
+              "abs_path": "/rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/rt.rs",
+              "lineno": 145,
+              "instruction_addr": "0x561132f6b789"
+            },
+            {
+              "function": "std::sys_common::backtrace::__rust_begin_short_backtrace",
+              "filename": "backtrace.rs",
+              "abs_path": "/rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/sys_common/backtrace.rs",
+              "lineno": 122,
+              "instruction_addr": "0x561132f5e173"
+            },
+            {
+              "function": "core::ops::function::FnOnce::call_once",
+              "filename": "function.rs",
+              "abs_path": "/rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/core/src/ops/function.rs",
+              "lineno": 248,
+              "instruction_addr": "0x561132f5e173"
+            },
+            {
+              "function": "r_core_dump::main",
+              "filename": "main.rs",
+              "abs_path": "/home/viter/Documents/hello-sentry/rust/r-core-dump/src/main.rs",
+              "lineno": 8,
+              "instruction_addr": "0x561132f609f0"
+            },
+            {
+              "function": "core::panicking::panic_fmt",
+              "filename": "panicking.rs",
+              "abs_path": "/rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/core/src/panicking.rs",
+              "lineno": 142,
+              "instruction_addr": "0x561132f55073"
+            },
+            {
+              "function": "rust_begin_unwind",
+              "filename": "panicking.rs",
+              "abs_path": "/rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/panicking.rs",
+              "lineno": 584,
+              "instruction_addr": "0x561133087239"
+            },
+            {
+              "function": "std::sys_common::backtrace::__rust_end_short_backtrace",
+              "filename": "backtrace.rs",
+              "abs_path": "/rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/sys_common/backtrace.rs",
+              "lineno": 138,
+              "instruction_addr": "0x561133085b34"
+            },
+            {
+              "function": "std::panicking::begin_panic_handler::{{closure}}",
+              "filename": "panicking.rs",
+              "abs_path": "/rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/panicking.rs",
+              "lineno": 586,
+              "instruction_addr": "0x5611330874c9"
+            },
+            {
+              "function": "std::panicking::rust_panic_with_hook",
+              "filename": "panicking.rs",
+              "abs_path": "/rustc/4b91a6ea7258a947e59c6522cd5898e7c0a6a88f/library/std/src/panicking.rs",
+              "lineno": 702,
+              "instruction_addr": "0x5611330876ca"
+            },
+            {
+              "function": "<sentry_panic::PanicIntegration as sentry_core::integration::Integration>::setup::{{closure}}::{{closure}}",
+              "filename": "lib.rs",
+              "abs_path": "/home/viter/.cargo/registry/src/github.com-1ecc6299db9ec823/sentry-panic-0.28.0/src/lib.rs",
+              "lineno": 70,
+              "instruction_addr": "0x561132f7a332"
+            },
+            {
+              "function": "sentry_panic::panic_handler",
+              "filename": "lib.rs",
+              "abs_path": "/home/viter/.cargo/registry/src/github.com-1ecc6299db9ec823/sentry-panic-0.28.0/src/lib.rs",
+              "lineno": 35,
+              "instruction_addr": "0x561132f7a332"
+            },
+            {
+              "function": "sentry_core::api::with_integration",
+              "filename": "api.rs",
+              "abs_path": "/home/viter/.cargo/registry/src/github.com-1ecc6299db9ec823/sentry-core-0.28.0/src/api.rs",
+              "lineno": 237,
+              "instruction_addr": "0x561132f7a332"
+            },
+            {
+              "function": "sentry_core::hub::Hub::with_integration",
+              "filename": "hub.rs",
+              "abs_path": "/home/viter/.cargo/registry/src/github.com-1ecc6299db9ec823/sentry-core-0.28.0/src/hub.rs",
+              "lineno": 262,
+              "instruction_addr": "0x561132f7b616"
+            },
+            {
+              "function": "sentry_core::api::with_integration::{{closure}}::{{closure}}",
+              "filename": "api.rs",
+              "abs_path": "/home/viter/.cargo/registry/src/github.com-1ecc6299db9ec823/sentry-core-0.28.0/src/api.rs",
+              "lineno": 237,
+              "instruction_addr": "0x561132f7b616"
+            },
+            {
+              "function": "sentry_panic::panic_handler::{{closure}}",
+              "filename": "lib.rs",
+              "abs_path": "/home/viter/.cargo/registry/src/github.com-1ecc6299db9ec823/sentry-panic-0.28.0/src/lib.rs",
+              "lineno": 36,
+              "instruction_addr": "0x561132f7b616"
+            },
+            {
+              "function": "sentry_panic::PanicIntegration::event_from_panic_info",
+              "filename": "lib.rs",
+              "abs_path": "/home/viter/.cargo/registry/src/github.com-1ecc6299db9ec823/sentry-panic-0.28.0/src/lib.rs",
+              "lineno": 128,
+              "instruction_addr": "0x561132f78952"
+            },
+            {
+              "function": "sentry_backtrace::current_stacktrace",
+              "filename": "lib.rs",
+              "abs_path": "/home/viter/.cargo/registry/src/github.com-1ecc6299db9ec823/sentry-backtrace-0.28.0/src/lib.rs",
+              "lineno": 26,
+              "instruction_addr": "0x561132f803eb"
+            }
+          ]
+        },
+        "mechanism": {
+          "type": "panic",
+          "handled": false
+        }
+      }
+    ]
+  },
+  "sdk": {
+    "name": "sentry.rust",
+    "version": "0.28.0",
+    "integrations": [
+      "panic",
+      "contexts",
+      "attach-stacktrace"
+    ],
+    "packages": [
+      {
+        "name": "cargo:sentry",
+        "version": "0.28.0"
+      }
+    ]
+  }
+}

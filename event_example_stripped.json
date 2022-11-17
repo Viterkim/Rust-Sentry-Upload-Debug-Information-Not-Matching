@@ -1,0 +1,128 @@
+{
+  "event_id": "16d00b89ccbd46c7ab1ed905c2223568",
+  "level": "fatal",
+  "platform": "native",
+  "timestamp": 1668699422.3074448,
+  "server_name": "viter",
+  "contexts": {
+    "device": {
+      "type": "device",
+      "arch": "x86_64"
+    },
+    "os": {
+      "type": "os",
+      "name": "Linux",
+      "version": "6.0.8-arch1-1",
+      "kernel_version": "#1 SMP PREEMPT_DYNAMIC Thu, 10 Nov 2022 21:14:24 +0000"
+    },
+    "rust": {
+      "type": "runtime",
+      "name": "rustc",
+      "version": "1.63.0",
+      "channel": "stable"
+    }
+  },
+  "exception": {
+    "values": [
+      {
+        "type": "panic",
+        "value": "Panic from r-core-dump",
+        "stacktrace": {
+          "frames": [
+            {
+              "function": "<unknown>",
+              "instruction_addr": "0x0"
+            },
+            {
+              "function": "<unknown>",
+              "instruction_addr": "0x55b061588265"
+            },
+            {
+              "function": "__libc_start_main",
+              "instruction_addr": "0x7facef3a234a"
+            },
+            {
+              "function": "<unknown>",
+              "instruction_addr": "0x7facef3a2290"
+            },
+            {
+              "function": "<unknown>",
+              "instruction_addr": "0x55b061593ab8"
+            },
+            {
+              "function": "<unknown>",
+              "instruction_addr": "0x55b0616b168e"
+            },
+            {
+              "function": "<unknown>",
+              "instruction_addr": "0x55b06159e789"
+            },
+            {
+              "function": "<unknown>",
+              "instruction_addr": "0x55b061591173"
+            },
+            {
+              "function": "<unknown>",
+              "instruction_addr": "0x55b0615939f0"
+            },
+            {
+              "function": "<unknown>",
+              "instruction_addr": "0x55b061588073"
+            },
+            {
+              "function": "<unknown>",
+              "instruction_addr": "0x55b0616ba239"
+            },
+            {
+              "function": "<unknown>",
+              "instruction_addr": "0x55b0616b8b34"
+            },
+            {
+              "function": "<unknown>",
+              "instruction_addr": "0x55b0616ba4c9"
+            },
+            {
+              "function": "<unknown>",
+              "instruction_addr": "0x55b0616ba6ca"
+            },
+            {
+              "function": "<unknown>",
+              "instruction_addr": "0x55b0615ad332"
+            },
+            {
+              "function": "<unknown>",
+              "instruction_addr": "0x55b0615ae616"
+            },
+            {
+              "function": "<unknown>",
+              "instruction_addr": "0x55b0615ab952"
+            },
+            {
+              "function": "<unknown>",
+              "instruction_addr": "0x55b0615b33eb"
+            }
+          ]
+        },
+        "mechanism": {
+          "type": "panic",
+          "handled": false
+        }
+      }
+    ]
+  },
+  "sdk": {
+    "name": "sentry.rust",
+    "version": "0.28.0",
+    "integrations": [
+      "panic",
+      "contexts",
+      "attach-stacktrace"
+    ],
+    "packages": [
+      {
+        "name": "cargo:sentry",
+        "version": "0.28.0"
+      }
+    ]
+  }
+}
