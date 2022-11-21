@@ -1,3 +1,4 @@
+// use sentry::integrations::debug_images::DebugImagesIntegration;
 use sentry::{ClientInitGuard, ClientOptions};
 use std::env;
 
@@ -20,6 +21,7 @@ pub fn sentry_init() -> ClientInitGuard {
         auto_session_tracking: true,
         ..Default::default()
     };
+    // .add_integration(DebugImagesIntegration::default());
 
     let guard = sentry::init(sentry_options);
 

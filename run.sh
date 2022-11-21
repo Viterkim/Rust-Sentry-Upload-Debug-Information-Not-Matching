@@ -28,10 +28,10 @@ objcopy --strip-debug --strip-unneeded ./target/release/"${BIN_NAME}"
 objcopy --add-gnu-debuglink=./target/release/"${BIN_NAME}".debug ./target/release/"${BIN_NAME}"
 
 # Upload debug information to sentry
-sentry-cli upload-dif --wait -o "$ORG" -p "$PROJECT" ./target/release/"${BIN_NAME}".debug
+sentry-cli upload-dif --wait -o "${ORG}" -p "${PROJECT}" ./target/release/"${BIN_NAME}".debug
 
 # To make sure we can't use the local one, and sentry has to use the one we upload
 rm ./target/release/"${BIN_NAME}".debug
 
-# Run and upload
+# # Run and upload
 DSN="$DSN" ./target/release/"${BIN_NAME}"

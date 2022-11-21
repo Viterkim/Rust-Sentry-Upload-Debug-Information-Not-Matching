@@ -4,4 +4,4 @@ version = "0.1.0"
 edition = "2021"
 
 [dependencies]
-sentry = "0.28"
+sentry = { version = "0.29", features = ["debug-images"] }
