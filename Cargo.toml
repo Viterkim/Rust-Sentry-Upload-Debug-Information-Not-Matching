@@ -2,9 +2,9 @@
 name = "rust-sentry-upload"
 version = "0.1.0"
 edition = "2021"
+repository = "https://github.com/Viterkim/Rust-Sentry-Upload-Debug-Information-Not-Matching"
 
 [dependencies]
-
 
 [profile.release]
 lto = true
