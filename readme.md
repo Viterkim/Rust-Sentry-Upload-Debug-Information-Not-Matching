@@ -1,3 +1,6 @@
+# IS SOLVED
+https://github.com/getsentry/sentry-rust/issues/519
+
 # Rust Sentry Upload Debug Information Not Matching
 A small sample project so showcase the issue I'm having. Made as simple as possible, panics and reports back to sentry with as many defaults as possible.
 
